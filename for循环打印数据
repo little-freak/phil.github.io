@@ -1,0 +1,16 @@
+#for循环
+#语法 for 临时变量 in 容器
+# tags='我是一个中国人'#字符串就是一个集合，这个集合里边都是字符
+# for item in tags:#for后面也要用冒号
+#     print(item)
+
+
+#range可以自动生成一个数据列表
+#range(开始,结束,步长) 都是整数型，左闭右开，步长不写默认是1
+#range(1,100)从1到99
+#type(rage(1,100))  看rage的类型
+#print(type(range(1,100)))#打印range类型，是个class
+
+
+for item in range(1,100):
+    print(item)
