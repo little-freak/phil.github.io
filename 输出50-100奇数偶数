@@ -1,0 +1,9 @@
+for data in range(50,101):#从50到100里依次判断数，注意range左闭右开
+    if data%2==0:#data是2的整数
+        print('%d是偶数'%data)#占位符的用法，用%d占位，引号结束括号之前注明%代表的变量
+        pass
+    else:
+        print('%d是奇数'%data)
+        pass
+    pass
+
