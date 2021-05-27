@@ -1,0 +1,44 @@
+#序列：一组有顺序的值。  序列有：字符串 列表 元组。 字典不是序列
+#序列可以切片和索引
+#正索引从0开始 指向左边。负索引指向右边
+#切片就是从整体数据里任意拿出一部分数据。切片每个位置都有一个下标。 切片语法：[start:end:step] step默认是1
+Test='python'#单引号和双引号都可
+# # print(type(Test))
+# print('输出第一个字符%s'%Test[0])#占位符表示数是%d,表示字符是%s 数组用方括号
+# print('输出第二个字符%s'%Test[1])#占位符表示数是%d,表示字符是%s 数组用方括号
+# for item in Test:
+#     print(item,end=' ')
+#     pass
+
+#一些小函数
+# name='phil'#注意字符串引号别丢
+# print('名字首字母大写为：%s'%name.capitalize())#变量.函数（） 敲完.函数会自动出来的 注意capitalize的拼写
+# a='   hello  '
+# b=a.strip()
+# c=a.lstrip()
+# d=a.rstrip()
+# print(a)
+# print(b)
+# print(c)
+# print(d)
+
+# a='hello'
+# print('a的地址是%d'%id(a))#id() 是输出变量地址的
+# b=a#这里是复制，和赋值有点区别。两个变量共用一个地址
+# print('b的地址是%d'%id(b))
+
+#a='I love python'
+# print(a.find('o'))#变量.find就是查看字符串中有米有这个字母。有重复字母的时候输出第一个字母的下标
+# print(a.find('p'))
+# print(a.find('u'))#没有就输出-1
+# print(a.index('o'))
+# print(a.index('m'))#index和find类似，只不过没找到的时候会报错。这两个使用看个人习惯
+#哈哈哈哈，刚刚插入字符会把后面的覆盖掉。上网搜了一下笔记本 fn+insert就可以激活
+# print(a.startswith('I'))
+# print(a.endswith('O'))#这俩是判断字符串开始和结尾的，输出是布尔类型，只有true和false
+# print(a.lower())#全员小写
+# print(a.upper())#全员大写
+a='hello world'
+print(a[2:4])#就把a看成一个数组 左闭右开。输出的是下标2到下标3
+print(a[0:3])#这里从下标0开始。完全可以把0省略掉，不影响
+print(a[::-1])#倒序输出
